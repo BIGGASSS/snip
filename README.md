@@ -1,5 +1,28 @@
 # Command Snippets for Personal Use
 
+## Table of Contents
+
+- [Gost](#gost)
+- [DD Debian](#dd-debian)
+- [DD Debian from CN](#dd-debian-from-cn)
+- [YABS](#yabs)
+- [IP Check](#ip-check)
+- [dnsmasq](#dnsmasq)
+- [Nexttrace](#nexttrace)
+- [Enable BBR](#enable-bbr)
+- [Nezha Dashboard](#nezha-dashboard)
+- [SSH Config](#ssh-config)
+- [Xray](#xray)
+- [Shadowsocks](#shadowsocks)
+- [Tcping](#tcping)
+- [CF Warp](#cf-warp)
+- [NetQuality](#netquality)
+- [Sing-Box](#sing-box)
+- [Nezha Agent](#nezha-agent)
+- [Realm](#realm)
+- [Realm from CN](#realm-from-cn)
+- [IPv4/v6 Priority](#ipv4v6-priority)
+
 ## Gost
 
 ```bash
