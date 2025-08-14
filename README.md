@@ -27,7 +27,7 @@
 ## SSHUtils
 
 ```bash
-curl -sL https://github.com/BIGGASSS/sshutil/raw/refs/heads/master/init_node.sh | bash
+curl -sL https://github.com/BIGGASSS/sshutil/raw/refs/heads/master/init_node.sh | bash && source ~/.bashrc
 ```
 
 ## Gost
