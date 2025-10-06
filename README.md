@@ -20,6 +20,7 @@
 - [NetQuality](#netquality)
 - [Sing-Box](#sing-box)
 - [Nezha Agent](#nezha-agent)
+- [Komari Agent](#komari-agent)
 - [Realm](#realm)
 - [Realm from CN](#realm-from-cn)
 - [IPv4/v6 Priority](#ipv4v6-priority)
@@ -137,6 +138,13 @@ bash <(curl -sL https://github.com/BIGGASSS/SingBoxInstall/raw/refs/heads/master
 
 ```bash
 wget https://github.com/nezhahq/agent/releases/download/v0.20.5/nezha-agent_linux_amd64.zip
+```
+
+## Komari Agent
+
+```bash
+wget -O setup-client-rs.sh "https://ghfast.top/https://raw.githubusercontent.com/GenshinMinecraft/komari-monitor-rs/refs/heads/main/install.sh" && chmod +x setup-client-rs.sh && sudo ./setup-client-rs.sh --http-server "https://tz.as9929.com:443" --ws-server "wss://tz.as9929.com:443" --token "<your_token>"
+
 ```
 
 ## Realm
