@@ -143,7 +143,7 @@ wget https://github.com/nezhahq/agent/releases/download/v0.20.5/nezha-agent_linu
 ## Komari Agent
 
 ```bash
-wget -O setup-client-rs.sh "https://ghfast.top/https://raw.githubusercontent.com/GenshinMinecraft/komari-monitor-rs/refs/heads/main/install.sh" && chmod +x setup-client-rs.sh && sudo ./setup-client-rs.sh --http-server "https://tz.as9929.com:443" --ws-server "wss://tz.as9929.com:443" --token "<your_token>" --terminal
+rm -rf /usr/local/bin/komari-monitor-rs && wget -O setup-client-rs.sh "https://ghfast.top/https://raw.githubusercontent.com/GenshinMinecraft/komari-monitor-rs/refs/heads/main/install.sh" && chmod +x setup-client-rs.sh && sudo ./setup-client-rs.sh --http-server "https://tz.as9929.com:443" --ws-server "wss://tz.as9929.com:443" --token "<your_token>" --terminal
 ```
 
 ## Realm
