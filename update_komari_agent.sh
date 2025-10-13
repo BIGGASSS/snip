@@ -4,8 +4,8 @@ set -e
 # Path to the service file
 SERVICE_FILE="/etc/systemd/system/komari-agent-rs.service"
 
-# Extract the token using awk
-TOKEN=$(awk -F'--token "' '{print $2}' "$SERVICE_FILE" | awk -F'"' '{print $1}')
+# Extract the token using awk and remove any empty lines
+TOKEN=$(awk -F'--token "' '{print $2}' "$SERVICE_FILE" | awk -F'"' '{print $1}' | tr -d '\n')
 
 # Check if the token was found
 if [ -z "$TOKEN" ]; then
@@ -15,6 +15,7 @@ fi
 
 echo "Token found: $TOKEN"
 
+# Remove the old binary before proceeding
 rm -rf /usr/local/bin/komari-monitor-rs
 
 # Run the installation script directly with the token
