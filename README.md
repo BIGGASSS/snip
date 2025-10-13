@@ -21,6 +21,7 @@
 - [Sing-Box](#sing-box)
 - [Nezha Agent](#nezha-agent)
 - [Komari Agent](#komari-agent)
+- [Update Komari Agent](#update-komari-agent)
 - [Realm](#realm)
 - [Realm from CN](#realm-from-cn)
 - [IPv4/v6 Priority](#ipv4v6-priority)
@@ -144,6 +145,12 @@ wget https://github.com/nezhahq/agent/releases/download/v0.20.5/nezha-agent_linu
 
 ```bash
 rm -rf /usr/local/bin/komari-monitor-rs && wget -O setup-client-rs.sh "https://ghfast.top/https://raw.githubusercontent.com/GenshinMinecraft/komari-monitor-rs/refs/heads/main/install.sh" && chmod +x setup-client-rs.sh && sudo ./setup-client-rs.sh --http-server "https://tz.as9929.com:443" --ws-server "wss://tz.as9929.com:443" --terminal --token "<your_token>"
+```
+
+## Update Komari Agent
+
+```bash
+bash <(curl -sL https://raw.githubusercontent.com/BIGGASSS/snip/refs/heads/master/update_komari_agent.sh)
 ```
 
 ## Realm
