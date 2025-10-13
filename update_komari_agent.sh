@@ -15,6 +15,8 @@ fi
 
 echo "Token found: $TOKEN"
 
+rm -rf /usr/local/bin/komari-monitor-rs
+
 # Run the installation script directly with the token
 bash <(curl -sL "https://ghfast.top/https://raw.githubusercontent.com/GenshinMinecraft/komari-monitor-rs/refs/heads/main/install.sh") \
   --http-server "https://tz.as9929.com:443" \
