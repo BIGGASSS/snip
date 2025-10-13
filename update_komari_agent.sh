@@ -4,8 +4,8 @@ set -e
 # Path to the service file
 SERVICE_FILE="/etc/systemd/system/komari-agent-rs.service"
 
-# Extract the token value
-TOKEN=$(grep -oP '(?<=--token\s+")[^"]+' "$SERVICE_FILE")
+# Extract the token value using a simpler grep without lookbehind
+TOKEN=$(grep --perl-regexp --only-matching --max-count=1 '--token "[^"]+"' "$SERVICE_FILE" | sed 's/--token "//;s/"//')
 
 # Check if the token was found
 if [ -z "$TOKEN" ]; then
